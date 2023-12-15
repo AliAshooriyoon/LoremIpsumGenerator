@@ -1,0 +1,61 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: Itim;
+    src: url("../fonts/Itim-Regular.ttf");
+}
+*{
+    font-family: Itim, serif;
+}
+.container{
+    margin: 0;
+    background-image: url('../media/backgroundPicture1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    filter: blur(0px);
+    max-width: 100%;
+    text-align: center;
+}
+.title{
+    background: linear-gradient(90deg, #00F3E5 1.66%, rgba(34, 243, 0, 0.95) 59.96%, rgba(51, 228, 1, 0.94) 62.44%, rgba(236, 63, 9, 0.85) 90.12%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Itim, serif;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 100px;
+}
+
+.selectWord,.selectType,select,#inputNumber{
+    background: rgba(108, 115, 107, 0.80);
+}
+
+/*select::-ms-expand {*/
+/*    display: none;*/
+/*}*/
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+
+}
+
+#submit{
+    border-radius: 25px;
+    background: linear-gradient(90deg, rgba(0, 243, 229, 0.46) -7.92%, rgba(34, 243, 0, 0.41) 43.49%, rgba(236, 63, 9, 0.49) 110.97%, rgba(236, 63, 9, 0.35) 110.97%);
+    color: #FFF;
+    text-align: center;
+    font-family: Itim, serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
