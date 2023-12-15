@@ -366,3 +366,8 @@ function submit() {
     alert("Probiers alle Dateien! (input.length<4)");
   }
 }
+copyButton.addEventListener("click", () => {
+  output.select();
+  output.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+});
