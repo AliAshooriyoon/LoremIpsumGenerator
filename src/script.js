@@ -320,6 +320,7 @@ const selectTypes = document.querySelector("#selectTypes");
 const button = document.getElementById("submit");
 let output = document.getElementById("text");
 let copyButton = document.getElementById("copy");
+let outputText;
 button.addEventListener("click", submit);
 function submit() {
   //Dieses Event ist für unseren Button
@@ -362,12 +363,25 @@ function submit() {
         .splice(0, inputValue.value)
         .join("");
     }
+    outputText = output.innerHTML;
   } else {
     alert("Probiers alle Dateien! (input.length<4)");
   }
 }
+
+function copyTextToClipboard(text) {
+  navigator.clipboard
+    .writeText(text)
+    .then(function () {
+      console.log("Text copied to clipboard");
+    })
+    .catch(function (err) {
+      console.error("Unable to copy text to clipboard", err);
+    });
+}
+
 copyButton.addEventListener("click", () => {
-  output.select();
-  output.setSelectionRange(0, 99999);
-  document.execCommand("copy");
+  // output.select();
+  // output.setSelectionRange(0, 99999);
+  copyTextToClipboard(output.innerHTML);
 });

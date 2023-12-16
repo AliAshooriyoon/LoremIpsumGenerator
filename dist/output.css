@@ -598,12 +598,16 @@ video {
   right: 0.5rem;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .top-0 {
   top: 0px;
 }
 
-.top-2 {
-  top: 0.5rem;
+.top-3 {
+  top: 0.75rem;
 }
 
 .top-80 {
@@ -821,7 +825,7 @@ video {
 
 .container{
   margin: 0;
-  background-image: url('../media/backgroundPicture1.jpg');
+  background-image: url('../media/backgroundPicture1.png');
   background-repeat: no-repeat;
   background-size: 100% 700px;
   filter: blur(0px);
@@ -845,6 +849,20 @@ video {
 
 .selectWord,.selectType,select,#inputNumber{
   background: rgba(108, 115, 107, 0.80);
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*select::-ms-expand {*/
