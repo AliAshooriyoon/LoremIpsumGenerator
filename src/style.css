@@ -9,6 +9,31 @@
 *{
     font-family: Itim, serif;
 }
+
+.textBox::-webkit-scrollbar {
+    width: 1.2em;
+}
+
+.textBox::-webkit-scrollbar-track {
+    background-color: #444444;
+    border-radius: 15px;
+}
+
+.textBox::-webkit-scrollbar-thumb {
+    background-color: #0F0E0E;
+    border-radius: 15px;
+}
+/*::-webkit-scrollbar{*/
+/*    width: 1em;*/
+/*}*/
+
+/*::-webkit-scrollbar-track {*/
+/*    background-color: #18181B;*/
+
+/*}*/
+/*::-webkit-scrollbar-thumb{*/
+/*    background-color: rgba(108, 115, 107, 0.80)*/
+/*}*/
 .container{
     margin: 0;
     background-image: url('../media/backgroundPicture1.png');
